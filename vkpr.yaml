@@ -1,0 +1,14 @@
+global:
+  domain: apps.vkpr.net 
+  ingressClassName: nginx
+  secure: true
+  provider: aws
+cert-manager:
+  email: sadasdas@!SAadd.com 
+  issuer:
+    type: "staging"
+    solver: "DNS01"
+external-dns:
+  enabled: true
+nginx:
+  enabled: ""

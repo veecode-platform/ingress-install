@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "ingress-install"
+  annotations:
+    github.com/project-slug: veecode-platform/ingress-install
+    backstage.io/techdocs-ref: dir:.
+    vault.io/secrets-path: devportal
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"

@@ -1,0 +1,15 @@
+name: Install Ingress Stack
+
+on:
+ workflow_dispatch:
+
+jobs:
+  Ingress_stack:
+    uses: veecode-platform/vkpr_templates/.github/workflows/Ingress_Stack.yml@1.3.6
+    secrets:
+      AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+      AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      CLUSTER_NAME: ${{ secrets.CLUSTER_NAME }}
+      AWS_HOSTEDZONE_ID: ${{ secrets.AWS_HOSTEDZONE_ID }}
+      
